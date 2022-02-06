@@ -1,7 +1,34 @@
 # Abstracts
+Thư mục `abstracts/` tập hợp tất cả các tools và helpers Sass được sử dụng trong toàn bộ dự án. 
+Mọi global variable, function, mixin và placeholder phải được đưa vào đây.
 
-The `abstracts/` folder gathers all Sass tools and helpers used across the project. Every global variable, function, mixin and placeholder should be put in here.
+Quy tắc chung cho thư mục này là nó không được xuất ra một dòng CSS khi tự biên dịch. Đây không phải là những Sass helpers.
 
-The rule of thumb for this folder is that it should not output a single line of CSS when compiled on its own. These are nothing but Sass helpers.
+EXAMPLE
 
-Reference: [Sass Guidelines](http://sass-guidelin.es/) > [Architecture](http://sass-guidelin.es/#architecture) > [Abstracts folder](http://sass-guidelin.es/#abstracts-folder)
+.avatar-status {
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50rem;
+    border: 1px solid #fff;
+  }
+}
+
+.avatar-online {
+  @extend .avatar-status;
+  &:before {
+    background-color: green;
+  }
+}
+
+.avatar-busy {
+  @extend .avatar-status;
+  &:before {
+    background-color: red;
+  }
+}

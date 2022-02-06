@@ -1,5 +1,6 @@
 # Layout
 
-The `layout/` folder contains everything that takes part in laying out the site or application. This folder could have stylesheets for the main parts of the site (header, footer, navigation, sidebar…), the grid system or even CSS styles for all the forms.
+Thư mục `layout /` chứa mọi thứ tham gia vào việc bố trí web hoặc application. 
+Thư mục này có thể có stylesheets cho các phần chính của web (header, footer, navigation, sidebar…), grid hoặc tất cả các forms.
 
 Reference: [Sass Guidelines](http://sass-guidelin.es/) > [Architecture](http://sass-guidelin.es/#architecture) > [Layout folder](http://sass-guidelin.es/#layout-folder)
